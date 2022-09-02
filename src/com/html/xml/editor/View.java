@@ -21,23 +21,13 @@ public class View extends JFrame implements ActionListener {
     public View() {
         try {
             UIManager.setLookAndFeel("Default");
-        } catch (ClassNotFoundException e) {
-            ExceptionHandler.log(e);
-        } catch (InstantiationException e) {
-            ExceptionHandler.log(e);
-        } catch (IllegalAccessException e) {
-            ExceptionHandler.log(e);
-        } catch (UnsupportedLookAndFeelException e) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
             ExceptionHandler.log(e);
         }
     }
 
     public UndoListener getUndoListener() {
         return undoListener;
-    }
-
-    public Controller getController() {
-        return controller;
     }
 
     public void setController(Controller controller) {

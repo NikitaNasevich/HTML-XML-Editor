@@ -5,7 +5,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class TabbedPaneChangeListener implements ChangeListener {
-    private View view;
+    private final View view;
 
     public TabbedPaneChangeListener(View view) {
         this.view = view;
