@@ -7,6 +7,7 @@ import javax.swing.text.html.HTMLEditorKit;
 import java.io.*;
 
 public class Controller {
+
     private final View view;
     private HTMLDocument document;
     private File currentFile;
